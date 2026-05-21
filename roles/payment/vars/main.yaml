@@ -1,0 +1,5 @@
+CART_HOST: cart.backend-{{ env }}.lithesh.shop
+USER_HOST: user.backend-{{ env }}.lithesh.shop
+RABBITMQ_HOST: rabbitmq-{{ env }}.lithesh.shop
+RABBITMQ_USER: roboshop
+RABBITMQ_PASSWORD: roboshop123
