@@ -1,2 +1,0 @@
-CATALOGUE_HOST: catalogue.backend-{{ env }}.lithesh.shop
-REDIS_HOST: redis-{{ env }}.lithesh.shop

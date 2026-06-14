@@ -1,5 +1,0 @@
-CATALOGUE_HOST: catalogue.backend-{{ env }}.lithesh.shop
-USER_HOST: user.backend-{{ env }}.lithesh.shop
-CART_HOST: cart.backend-{{ env }}.lithesh.shop
-SHIPPING_HOST: shipping.backend-{{ env }}.lithesh.shop
-PAYMENT_HOST: payment.backend-{{ env }}.lithesh.shop
