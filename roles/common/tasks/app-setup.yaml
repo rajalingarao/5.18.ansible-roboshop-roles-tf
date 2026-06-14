@@ -1,24 +1,24 @@
+- name: create roboshop user
+  ansible.builtin.user:
+    name: roboshop
+
+- name: Recursively remove app directory
+  ansible.builtin.file:
+    path: /app
+    state: absent
+
 - name: create app directory
   ansible.builtin.file:
     path: /app
     state: directory
 
-- name: create roboshop system user
-  ansible.builtin.user:
-    name: roboshop
-    shell: /sbin/nologin
-    system: true
-    home: /app
-
-- name: "download {{ component }} code"
+- name: "download {{component}} application"
   ansible.builtin.get_url:
-    url: "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v3.zip"
-    dest: /tmp/{{ component }}.zip
+    url: "https://roboshop-builds.s3.amazonaws.com/{{component}}.zip"
+    dest: /tmp
 
-# this module thinks file exist on ansible control server, needs to extract on to remote machine
-# remote_src: yes means files already exist in catalogue server
-- name: "extract {{ component }} code"
+- name: "extract {{component}} application"
   ansible.builtin.unarchive:
-    src: "/tmp/{{ component }}.zip"
+    src: "/tmp/{{component}}.zip"
     dest: /app
     remote_src: yes

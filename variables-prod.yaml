@@ -1,0 +1,14 @@
+MONGODB_HOST: mongodb-prod.lithesh.shop  # submit your host
+REDIS_HOST: redis-prod.lithesh.shop 
+MYSQL_HOST: mysql-prod.lithesh.shop 
+RABBITMQ_HOST: rabbitmq-prod.lithesh.shop 
+CATALOGUE_HOST: catalogue-prod.lithesh.shop 
+USER_HOST: user-prod.lithesh.shop 
+CART_HOST: cart-prod.lithesh.shop 
+SHIPPING_HOST: shipping-prod.lithesh.shop 
+PAYMENT_HOST: payment-prod.lithesh.shop 
+DISPATCH_HOST: dispatch-prod.lithesh.shop
+WEB_HOST: web-prod.lithesh.shop
+
+#NEXUS_URL: http://172.31.5.95:8081/repository
+#group_id: "com/roboshop"
